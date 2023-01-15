@@ -1,0 +1,61 @@
+/*슬라이더*/
+
+.swiper-container {width: 100%;height: 800px;overflow: hidden;
+}
+
+
+
+/*배달주문 섹션*/
+
+.delivery h2{color: #016abb;font-family: 'Jua', sans-serif;font-size:36px;text-align: center;}
+.delivery h4{color: #666;text-align: center;}
+.delivery_list{padding-top:100px}
+.d_line {float: left}
+.d_line li{float: left; margin-left:  45px;box-sizing: border-box;border: 3px solid 
+transparent}
+.d_line li:last-child{margin-right: 45px}
+.d_txt p{line-height: 45px;height: 45px;text-align: center;font-size: 12px;}
+.d_txt p:first-child{border-bottom: 1px solid #ccc ;font-size: 14px}
+.d_line li:hover{border:3px solid #016abb}
+.d_line li:hover p{border-color:#016abb;/*color: #016abb;*/box-sizing: border-box}
+
+
+/*새로운 이야기 섹션*/
+
+.story h2{color: #6f9e44;font-family: 'Jua', sans-serif;font-size:36px;text-align: center;margin-top: 50px}
+.story h4{color: #666;text-align: center;}
+.sns_wrap{text-align: center;margin-top: 50px;}
+.story .sns{display: inline-block} 
+.story .sns li{float: left;margin: 0 25px;}
+.story .sns li a{background: url(../img/sprite.png)no-repeat -220px -109px;width: 56px;height: 56px;text-indent: -9999px;display: block}
+.story .sns li:nth-child(2) a{background-position:-324px -109px; }
+.story .sns li:nth-child(3) a{background-position:-424px -109px;}
+
+.center_slider{height: 500px;margin-bottom: 90px;margin-top: 150px;}
+
+
+.slider_txt{background:#fff;width:247px;padding: 10px;}
+.center_slider{position: relative}
+.slick-arrow{background: url('../img/sprite.png')  no-repeat -172px -205px;width: 32px;height: 54px;border: 0;text-indent:-99999px;position: absolute; text-align: center;cursor: pointer}
+.slick-next{background-position:  -252px -205px;top:-100px;left:calc(50% + 70px)}
+.slick-arrow:focus{outline: none}
+.slick-prev{left:calc(50% - 102px);top:-100px}}
+.slider_txt h6{font-size: 18px;font-family: 'Jua', sans-serif;}
+.slider_txt p{font-size: 14px;width: 215px;}
+
+.slider_txt{height: 89px;overflow: hidden}
+/*이미지슬라이더 될떄 */
+.slick-list {overflow: inherit}
+.swiper-wrapper{width: 100%;}
+.slick-center {transition: all 1s}
+.slick-center img{transform: scale( 1.1, 1.2 );}
+.slick-center .slider_txt{transform: scale( 1.1, 1.2 );}
+
+/*팝업*/
+
+#popwin{width: 300px; height: 220px;border: 1px solid #016abb;position: fixed; top: 250px;left:calc(50% - 150px); z-index:1; background: #fff;padding: 20px;box-sizing: border-box;font-weight: bold}
+#popwin h2{text-align: center;height: 40px;line-height: 40px;margin-bottom: 10px;border-bottom:2px solid #016abb;color: #016abb;}
+#popwin .pop_txt{margin: auto;font-size: 14px;;margin-bottom: 12px;width: 233px;font-weight: normal}
+ button.closebtn{border: 1px solid  #016abb;background: #016abb;color: #fff;width: 50px;height: 30px;}
+
+

@@ -1,0 +1,34 @@
+/*목표 탭*/
+.icon_brand{text-align: center}
+.icon_list{margin-top: 100px;display: inline-block; }
+.icon_list li{float: left}
+.icon_list li a{margin: auto;float: left;margin: 25px;background: url('../img/sprite.png') no-repeat -93px -307px; width: 56px; height: 76px;;text-indent: -99999px;}
+.icon_list li:nth-child(2) a{background-position:  -223px -307px;}
+.icon_list li:nth-child(3) a{background-position:  -354px -307px;}
+.icon_list li:nth-child(4) a{background-position:  -484px -307px;}
+.icon_list li:nth-child(5) a{background-position:  -614px -307px;}
+
+
+.icon_list li.brand_on:nth-child(1) a{background-position: -93px -407px;}
+.icon_list li.brand_on:nth-child(2) a{background-position: -223px -407px;}
+.icon_list li.brand_on:nth-child(3) a{background-position: -354px -407px;}
+.icon_list li.brand_on:nth-child(4) a{background-position: -484px -407px;}
+.icon_list li.brand_on:nth-child(5) a{background-position: -614px -407px;}
+
+
+/*리스트 박스*/
+.brand_list{padding-top:100px;float: left;}
+.brand_list li{float: left; margin:27px;border: 2px solid transparent;width: 220px;display: inline-block;display: none}
+.brand_list li.on{display: block}
+
+.d_txt p{line-height: 45px;height: 45px;text-align: center;font-size: 12px;}
+.d_txt p:first-child{border-bottom: 1px solid #ccc ;font-size: 14px}
+.brand_list li:hover{border:2px solid #016abb}
+.brand_list li:hover p{border-color:#016abb;}
+
+/*더보기 버튼*/
+
+
+.more-btn {display: block;width: 100%; text-align: center;padding: 80px 0}
+.more-btn a.more_on{display: inline-block;color: #fff;cursor: pointer;background: #016abb;padding:20px 40px;width: 20%; border-radius: 50px;}
+

@@ -1,0 +1,88 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap');
+
+
+body{background: #fff;font-size: 14px;font-family: 'Noto Sans KR', sans-serif;;color: #534240;overflow-x: hidden;word-break: keep-all}
+
+.contents *{transition:all 0.35s}
+/*head*/
+.head{height:220px;max-width: 1276px;margin: auto;position: relative;height: 220px;}
+.head h2{text-align: center; padding-top :30px;}
+
+/*햄버거 메뉴버튼*/
+.menu_btn{position: absolute;top: -40px;left: 30px;display: none}
+.menu_btn,.menu_btn span {display: inline-block;transition: all .4s;box-sizing: border-box;}
+
+.menu_btn{position: relative;width: 20px;height: 20px;display: none}
+
+.menu_btn span {position: absolute;left: 0;width: 100%;height: 2px;background-color: #534240;border-radius: 4px;}
+
+.menu_btn span:nth-of-type(1) {top: 0;}
+
+.menu_btn span:nth-of-type(2) {top: 9px}
+
+.menu_btn span:nth-of-type(3) {bottom: 0;}
+
+.menu_btn.active span:nth-of-type(1) {
+-webkit-transform: translateY (20px) rotate (-45deg);
+transform: translateY(9px) rotate(-45deg);
+}
+
+.menu_btn.active span:nth-of-type(2) {
+	opacity: 0;
+}
+
+.menu_btn.active span:nth-of-type(3) {
+	-webkit-transform: translateY(-20px) rotate(45deg);
+	transform: translateY(-9px) rotate(45deg);
+}
+
+/*gnb*/
+.gnb{position: absolute;top:140px;text-align: center; width: 100%;z-index: 20000}
+
+.gnb .gnb_wrap{font-size: 16px;text-align: center;max-width: 1276px}
+
+.gnb .main{width: 23%;position: relative;display: inline-block}
+.gnb .main>a::after{content: '';height: 2px;width: 0;position: absolute;display: block;;background: #534240 ;bottom:0px;left:0;right: 0;margin: auto;z-index: 2200}
+.gnb .main:hover a::after{width: 100%;transition: width 0.5s}
+.gnb .main>a{display: block;height: 80px;line-height: 80px;font-weight: bold}
+.gnb .sub{z-index: 20000;position: absolute;left:0;top:80px;text-align: center;width: 100%;display: none}
+.gnb .sub>li{display: block;text-align: center;}
+.gnb .sub>li:hover{background-color: #e3e5d9}
+.gnb .sub>li>a{ height: 40px; line-height:40px;}
+.gnb_bg{position: absolute;background:#fcfbf5;top:220px;left: 0;width: 100%;height: 240px;
+z-index: 10000;display: none}
+footer p{width: 80%;margin: auto}
+/*footer*/
+footer{height: 170px;border-top: 1px solid #534240;margin-top: 36px}
+footer p{text-align: center;font-size: 12px;margin-bottom:28px; }
+footer p:first-of-type{margin-top: 55px}
+
+@media screen and (max-width:480px){
+    .menu_btn{display: block}
+    .head{width:100%;margin: auto;height: 100px;min-width: 360px;}
+    .head h2 img{display: inline-block; background: url(../img/logo_phone.png)no-repeat;width: 68px;height: 52px}
+    
+    .gnb_wrap_bg{position:absolute;top:100px;left: -110%;z-index: 20000;width: 100%;height: 100%;transition: right 0.3s;display: block;}
+    .gnb_wrap_bg.on{left:0}
+    
+    .gnb{position: static;top:100px;text-align: left;background: #fcfbf5;padding-bottom: 100px;width: calc(100% - 60px;);padding-top: 30px;}
+    .gnb .main{height: 40px;width: 80%;margin:auto;border-bottom: 1px solid #534240;float: inherit}
+    .gnb .main>a{text-align: left;font-size: 14px;line-height: 40px;height: 41px;padding-left: 20px;}
+    .gnb .sub{display: block;background-color: #fcfbf5;position: static;display: none;padding-bottom: 50px;}
+    .gnb .sub li>a{font-size: 12px;}
+    .gnb .sub li{text-align: left;padding-left: 40px;}
+    .gnb li.main>a::after{background: url(../img/sprit.png)no-repeat -106px -42px;width: 17px;height: 9px;;display: block;left: 90%;bottom: 10px;}
+    .gnb li.main.on>a::after{transform: rotate(-180deg);}
+
+    .gnb .main:hover a::after{width: 17px;transition: none}
+    ./*gnb_bg{display: block;top:100px;}*/
+    
+    /*addclass로 사용할 부분*/
+    
+    .gnb .main.on>a::after{transform: rotate(-45deg);border-top-color:#fff;border-right-color:#fff}
+  
+    
+    
+}
+}

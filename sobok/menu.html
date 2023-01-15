@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>소복_메뉴_웹리디자인_서다운 포트폴리오</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/common.css" type="text/css">
+    <link rel="stylesheet" href="css/menu.css" type="text/css">
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/common.js"></script>
+    
+    
+</head>
+<body>
+       <div class="head">
+        <h2><a href="index.html"><img src="img/logo.png" alt="소복"></a></h2>
+        <a class="menu_btn" href="#">
+	        <span></span>
+	        <span></span>
+	        <span></span>
+        </a>
+        <div class="gnb_wrap_bg">
+        <nav class="gnb">
+        <ul class="gnb_wrap clearfix">
+            <li class="main">
+                <a href="index.html">소복</a>
+                <ul class="sub">
+                    <li><a href="#">철학</a></li>
+                    <li><a href="#">재료이야기</a></li>
+                    <li><a href="#">인테리어</a></li>
+                    <li><a href="#">매장찾기</a></li>
+                </ul>
+            </li>
+            <li class="main" id="menu">
+                <a href="menu.html?all">메뉴</a>
+                <ul class="sub">
+                    <li><a href="#" data-name="dessert">디저트</a></li>
+                    <li><a href="#" data-name="drink">음료</a></li>  
+                    <li><a href="#" data-name="gift">선물</a></li>  
+                </ul>
+            </li>
+            <li class="main">
+                <a href="#">소식</a>
+                <ul class="sub">
+                    <li><a href="#">매거진</a></li>
+                    <li><a href="#">미디어</a></li>
+                    <li><a href="#">인스타그램</a></li>
+                    <li><a href="#">이벤트</a></li>
+                </ul>
+            </li>
+            <li class="main">
+                <a href="#">프렌차이즈</a>
+                <ul class="sub">
+                    <li><a href="#">가맹안내</a></li>
+                    <li><a href="#">인테리어</a></li>
+                    <li><a href="#">가맹상담</a></li>
+                </ul>
+            </li>
+        </ul>
+            
+        </nav>
+        </div>
+        <!--e:메뉴-->
+        <div class="gnb_bg"></div> 
+    </div>
+    <!--e:헤더-->
+    <div class="contents">
+      <div class="contents_wrap clearfix">
+       
+       <div class="menu_wrap">
+           <h3 class="title">메뉴 <span>/</span>
+           <span class="sub-title">디저트</span></h3>
+           <ul class="menu_gnb clearfix">
+                <li id="all"><a href="/menu.html?all" data-name="all" data-subtitle="전체">전체</a></li>
+               <li id="dessert"><a href="/menu.html?dessert" data-name="dessert" data-subtitle="디저트">디저트</a></li>
+               <li id="drink"><a href="/menu.html?drink" data-name="drink" data-subtitle="음료">음료</a></li>
+               <li id="gift"><a href="/menu.html?gift" data-name="gift" data-subtitle="선물포장">선물포장</a></li>
+           </ul>
+            <div class="dessert">
+               <h4 class="sub_title dessert_sub" data-type="dessert">디저트</h4>
+                <ul class="clearfix">
+                    <li class="menu_box on" data-type="dessert">
+                        <a href="#"> 
+                            <div class="imgbox"><img src="img/menu/de1.png" alt="소복 눈꽃 빙수"></div>
+                            <p>소복 눈꽃 빙수</p>
+                       </a>
+                        
+                        
+                    </li>
+                    <li class="menu_box" data-type="dessert">
+                        <a href="#">                 
+                            <div class="imgbox"><img src="img/menu/de2.png" alt="소복 아이스크림"></div>
+                            <p>소복 아이스크림</p>
+                        </a>
+                    </li>
+                    <li class="menu_box" data-type="dessert">
+                        <a href="#">     
+                            <div class="imgbox"><img src="img/menu/de3.png" alt="소복 인절미 아이스볼"></div>
+                            <p>소복 인절미 아이스볼</p>
+                        </a>
+                    </li>
+                    <li class="menu_box" data-type="dessert">
+                        <a href="#">               
+                            <div class="imgbox"><img src="img/menu/de4.png" alt="소복 고구마 아이스크림"></div>
+                            <p>소복 고구마 아이스크림</p>
+                         </a>
+                        
+                    </li>
+                    <li class="menu_box" data-type="dessert">
+                        <a href="#">  
+                            <div class="imgbox"><img src="img/menu/de5.png" alt="소복 구름 모찌"></div>
+                            <p>소복 구름 모찌</p>
+                        </a>
+                        
+                    </li>
+                    <li class="menu_box" data-type="dessert">
+                        <a href="#">         
+                            <div class="imgbox"><img src="img/menu/de6.png" alt="소복 조청 찹쌀파이"></div>
+                            <p>소복 조청 찹쌀파이</p>
+                             </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="drink_sp">
+               <h4 class="sub_title drink_sub" data-type="drink">음료 / <span>스페셜 드링크</span></h4>
+                <ul class="clearfix">
+                    <li class="menu_box" data-type="drink">
+                        <a href="#">              
+                            <div class="imgbox"><img src="img/menu/drink_sp1.png" alt="소복 달고드름"></div>
+                            <p>소복 달고드름</p>
+                        </a>
+
+                    </li>
+                    <li class="menu_box" data-type="drink">
+                        <a href="#">                       
+                            <div class="imgbox"><img src="img/menu/drink_sp2.png" alt="소복 녹차 달고드름"></div>
+                            <p>소복 녹차 달고드름</p>
+                        </a>
+                        
+                    </li>
+                    <li class="menu_box" data-type="drink">
+                        <a href="#">                
+                            <div class="imgbox"><img src="img/menu/drink_sp3.png" alt="소복 라떼"></div>
+                            <p>소복 라떼</p>
+                        </a>
+                        
+                        
+                    </li>
+                    <li class="menu_box" data-type="drink">
+                        <a href="#">               
+                            <div class="imgbox"><img src="img/menu/drink_sp4.png" alt="소복 녹차 라떼"></div>
+                            <p>소복 녹차 라떼</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+             <div class="drink_coffee">
+               <h4 class="sub_title drink_sub" data-type="drink">음료 / <span>커피</span></h4>
+                <ul class="clearfix">
+                    <li class="menu_box" data-type="drink">
+                        <a href="#">               
+                            <div class="imgbox"><img src="img/menu/drink_coffee1.png" alt="누룽지 커피"></div>
+                            <p>누룽지 커피</p>
+                        </a>
+                        
+                    </li>
+                    <li class="menu_box" data-type="drink">
+                        <a href="#">                
+                            <div class="imgbox"><img src="img/menu/drink_coffee2.png" alt="아메리카노"></div>
+                            <p>아메리카노</p>
+                        </a>
+                       
+                    </li>
+                    <li class="menu_box" data-type="drink">
+                        <a href="#">                
+                            <div class="imgbox"><img src="img/menu/drink_coffee3.png" alt="카페라떼"></div>
+                            <p>카페라떼</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="drink_tea">
+               <h4 class="sub_title drink_sub" data-type="drink">음료 / <span>스페셜 드링크</span></h4>
+                <ul class="clearfix">
+                    <li class="menu_box" data-type="drink">
+                        <a href="#">                
+                            <div class="imgbox"><img src="img/menu/drink_tea1.png" alt="이슬티"></div>
+                            <p>이슬티</p>
+                        </a>
+                    </li>
+                    <li class="menu_box" data-type="drink">
+                        <a href="#">               
+                            <div class="imgbox"><img src="img/menu/drink_tea2.png" alt="그린티"></div>
+                            <p>그린티</p>
+                        </a>
+                    </li>
+                    <li class="menu_box" data-type="drink">
+                        <a href="#">                  
+                            <div class="imgbox"><img src="img/menu/drink_tea3.png" alt="자몽티"></div>
+                            <p>자몽티</p>
+                        </a>
+                    </li>
+                    <li class="menu_box" data-type="drink">
+                        <a href="#">               
+                            <div class="imgbox"><img src="img/menu/drink_tea4.png" alt="유자에이드"></div>
+                            <p>유자에이드</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="gift">
+               <h4 class="sub_title gift_sub" data-type="gift">선물포장</h4>
+                <ul class="clearfix">
+                    <li  class="menu_box" data-type="gift">
+                        <a href="#"> 
+                            <div class="imgbox"><img src="img/menu/gift1.png" alt="인절미 아이스볼 포장 (소)"></div>
+                            <p>인절미 아이스볼 포장 (소)</p>
+                        </a>
+                    </li>
+                    <li  class="menu_box" data-type="gift">
+                        <a href="#">
+                            <div class="imgbox"><img src="img/menu/gift2.png" alt="인절미 아이스볼 포장 (중)"></div>
+                            <p>인절미 아이스볼 포장 (중)</p>
+                        </a>
+                      
+                    </li>
+                    <li  class="menu_box" data-type="gift">
+                        <a href="#">
+                            <div class="imgbox"><img src="img/menu/gift3.png" alt="인절미 아이스볼 포장 (대)"></div>
+                            <p>인절미 아이스볼 포장 (대)</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div> 
+        <div class="menu_bg">
+          <div class="dessert">
+                <ul class="clearfix">
+                    <li>
+                        <div class="info_box on">
+                             <div class="menu_img"></div>
+                            <h2>소복 눈꽃 빙수</h2>
+                            <p class="info_txt">신선한 우유에 쌀과 현미로 만든 진한 아이스크림
+베이스를 넣어, 눈 녹듯이 부드러운 디저트 빙수</p>
+                            <p class="info_price">8,500원</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="info_box">
+                            <h2>소복 아이스크림</h2>
+                            <p class="info_txt">아침마다 쌀과 현미를 베이스로 만들어, 고소하고
+담백한 향이 일품인 소복만의 정갈한 아이스크림</p>
+                            <p class="info_price">5,200원</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="info_box">
+                            <h2>소복 인절미 아이스볼</h2>
+                            <p class="info_txt">소복 아이스크림에 떡을 넣은 후 손으로 둥글게 빚어,
+한입에 먹기 좋은 한국식 디저트 아이스크림</p>
+                            <p class="info_price">7,500원</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="info_box">
+                            <h2>소복 고구마 아이스크림</h2>
+                            <p class="info_txt">달콤한 꿀 고구마에 우유 슈크림 또는 소복 아이스크림을
+토핑으로 넣어, 자연 그대로 맛 보는 건강 디저트</p>
+                            <p class="info_price">5,500원</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="info_box">
+                            <h2>소복 구름 모찌</h2>
+                            <p class="info_txt">쫄깃한 찹쌀 모찌를 노릇하게 구워낸 후 우유 슈크림
+또는 소복 아이스크림을 넣어먹는 식감이 매력적인 디저트</p>
+                            <p class="info_price"> 3,500원</p>
+                        </div>
+                        
+                    </li>
+                    <li>
+                        <div class="info_box">
+                            <h2>소복 조청 찹쌀파이</h2>
+                            <p class="info_txt">바삭한 페스츄리 속에 달콤한 조청과 떡을 함께 구운 후,
+담백한 소복 아이스크림을 곁들여 먹는 한국식 파이.</p>
+                            <p class="info_price">5,500원</p>
+                        </div>
+                       
+                    </li>
+               
+                    <li>
+                        <div class="info_box">
+                            <h2>소복 달고드름</h2>
+                            <p class="info_txt">수제 곡물 베이스에 소복 아이스크림을 더해
+고소한 풍미가 일품인 아이스 프라페</p>
+                            <p class="info_price"> 6,500원</p>
+                        </div>
+                        
+                    </li>
+                    <li>
+                        <div class="info_box">
+                            <h2>소복 녹차 달고드름</h2>
+                            <p class="info_txt">한라산 유기농 녹차잎과 곡물의
+고소함이 어우러진 아이스 프라페</p>
+                            <p class="info_price">6,500원</p>
+                        </div>
+                        
+                    </li>
+                    <li>
+                        <div class="info_box">
+                            <h2>소복 라떼</h2>
+                            <p class="info_txt">정성으로 아침마다 저어 만든
+고소하고 담백한 수제 곡물 라떼</p>
+                            <p class="info_price">5,500원</p>
+                        </div>
+                        
+                    </li>
+                    <li>
+                        <div class="info_box">
+                            <h2>소복 녹차 라떼</h2>
+                            <p class="info_txt">고소하고 진한 소복 라떼에 한라산 녹차의
+은은함이 더해진 부드러운 라떼</p>
+                            <p class="info_price">5,500원</p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        <div class="info_box">
+                            <h2>누룽지 커피</h2>
+                            <p class="info_txt">누룽지 향과 블렌딩 커피의 조화가
+일품인 소복 전통 커피</p>
+                            <p class="info_price"> 4,800원</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="info_box">
+                            <h2>아메리카노</h2>
+                            <p class="info_txt">에스프레소의 달콤 쌈싸름함이 어우러진
+소복 블렌딩 커피</p>
+                            <p class="info_price"> 4,300원</p>
+                        </div>
+                        
+                    </li>
+                    <li>
+                        <div class="info_box">
+                            <h2>카페라떼</h2>
+                            <p class="info_txt">에스프레소에 고소한 우유가 들어간
+부드러운 카페라떼</p>
+                            <p class="info_price">4,500원</p>
+                        </div>
+                        
+                    </li>
+                   
+                    <li>
+                        <div class="info_box">
+                            <h2>이슬티</h2>
+                            <p class="info_txt">이슬처럼 깨끗하고, 수국 본연의 달콤한
+                            향이 일품인 천연 수국차</p>
+                            <p class="info_price"> 5,500원</p>
+                        </div>
+                        
+                    </li>
+                    <li>
+                        <div class="info_box">
+                            <h2>소복 녹차 달고드름</h2>
+                            <p class="info_txt">한라산 유기농 녹차잎과 곡물의
+고소함이 어우러진 아이스 프라페</p>
+                            <p class="info_price">6,500원</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="info_box">
+                            <h2>그린티</h2>
+                            <p class="info_txt">녹차의 감미로운 풍미와 은은한
+향이 가득 담긴 유기농 그린티</p>
+                            <p class="info_price">5,200원</p>
+                        </div>
+                       
+                    </li>
+                    <li>
+                        <div class="info_box">
+                            <h2>자몽티</h2>
+                            <p class="info_txt">직접 담구어 자몽향이 가득한 수제 과일차입니다.</p>
+                            <p class="info_price">5,200원</p>
+                        </div>
+                        
+                    </li>
+                      <li>
+                        <div class="info_box">
+                            <h2>유자에이드</h2>
+                            <p class="info_txt">상큼하고 달콤한 유자청이 어우러진 에이드입니다.</p>
+                            <p class="info_price">4,800원</p>
+                        </div>
+                    </li>
+                    <li>
+                        
+                        <div class="info_box">
+                            <h2>인절미 아이스볼 포장 (소)</h2>
+                            <p class="info_txt">소복 인절미 아이스볼(9pcs) 포장</p>
+                            <p class="info_price"> 7,500원</p>
+                        </div>
+                        
+                    </li>
+                    <li>
+                       
+                        <div class="info_box">
+                            <h2>인절미 아이스볼 포장 (중)</h2>
+                            <p class="info_txt">소복 인절미 아이스볼(18pcs) 포장</p>
+                            <p class="info_price">13,500원</p>
+                        </div>
+                    </li>
+                    <li>
+                        
+                        <div class="info_box">
+                            <h2>인절미 아이스볼 포장 (대)</h2>
+                            <p class="info_txt">소복 인절미 아이스볼(27pcs) 포장</p>
+                            <p class="info_price">19,500원</p>
+                        </div>
+                        
+                    </li>
+                   
+                </ul>
+            </div>
+         <div class="menu_bg_wrap">
+             <div class="menu_bg_img"></div>
+         </div>
+       </div>  
+    </div>
+    </div>
+    <footer>
+        <p>사업자명 : 소복 | 대표 : 박성환,조규홍 |
+        사업자 등록번호 : 105-21-31045 | 서울시 마포구 서교동 395-138번지 세르보빌딩 5층</p>
+        <p>© Copyright(c)Natural Handmade Dessert SOBOK 2020 All Rights Reserved. | TEL 02. 325. 0864 | FAX 02. 325 0865</p>
+    </footer>
+</body>
+</html>

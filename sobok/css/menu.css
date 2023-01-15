@@ -1,0 +1,76 @@
+
+/*contents*/
+.contents{background: url(../img/menu/bg.jpg);padding-top: 30px;padding-bottom: 30px;}
+.contents_wrap{max-width: 1276px;margin: auto;position: relative}
+
+.menu_wrap{width: 52%;background-color: #fcfbf5;padding-left: 1%;padding-right: 1%;padding-bottom: 100px;float: left;position: relative}
+
+.menu_wrap ul{margin-bottom: 12px;margin: auto}
+.title{text-align: center;font-weight: bold;font-size: 30px;height: 85px;line-height: 82px;}
+.title span{font-size:24px;display: none}
+.menu_gnb{position: absolute;right: 5%;top: 70px}
+.menu_gnb li{float: left;;font-size: 16px;line-height: 20px; }
+.menu_gnb li a{color: #b8b193}
+.menu_gnb li::after{content: '|';float: left;margin: 0 20px;color:  #b8b193}
+.menu_gnb li:nth-child(1)::after{display: none}
+.menu_gnb li.menu_on a{color: #534240}
+.sub_title{font-size:16px;font-weight: bold;line-height: 36px;height: 36px;padding-left: 20px;border-bottom: 1px solid #b8b193;margin-bottom: 20px;width:180px;margin-top: 50px;}
+.sub_title span{font-size: 14px;}
+
+.menu_box{width:160px;float: left;height: 160px;border: 1px solid transparent;box-sizing: border-box;text-align: center;margin-left: 5px;;margin-bottom: 5px;}
+.menu_box.on{background-color:#b8b193;}
+.menu_box.on .imgbox img{transform: scale( 1.1 );transition: scale 0.5s;}
+.menu_box:hover .imgbox img{transform: scale( 1.1 );transition: scale 0.5s;}
+.menu_box:hover{border-color:#b8b193}
+.menu_box .imgbox{width: 100%;height: 128px;line-height: 128px}
+.menu_box .imgbox img{vertical-align:middle;}
+.menu_box p{text-align: center;color: #534240;font-size: 14px;}
+/*오른쪽 */
+.menu_bg{width:45%;float: left;text-align: center;margin-top: 20px;position: relative}
+.menu_bg_wrap{width:100%;height: 500px; margin: auto;}
+.menu_bg_img{vertical-align:middle;display: inline-block;background-image:url(../img/menu/bg_img0.png); background-repeat:no-repeat;background-position: center;width: 100%; height:100%}
+.info_box.on{display: block}
+.info_box{width: 300px;height: 220px;background-color: #b8b193; display: none; margin: auto; position: relative}
+.info_box h2{font-size: 20px;padding-top: 45px;position: relative;text-align: center;word-break: keep-all}
+.info_box .info_txt{width: 90%;line-height: 30px;margin: auto;margin-top: 15px;word-break: keep-all}   
+.info_box .info_price{position: absolute;right: 10%;bottom: 27px;}
+/*타블렛 사이즈*/
+@media screen and (max-width:768px){
+    .contents_wrap{max-width: 612px;margin: auto;position: relative}
+    /*top*/
+    .menu_gnb{top: 40px}
+    .menu_gnb li{float: left;margin-left: 10px;margin-right: 10px;font-size: 16px;font-weight: bold}
+    .menu_gnb li#id{display: none}
+    .menu_bg{position: absolute;width: 100%;height:230px;padding-top: 0;}
+    .info_box{margin-right: 10px;height:230px; }
+    .menu_bg_wrap{width:50%;height:230px;position: absolute;top: 0;margin-top:0;}
+      
+    /*bottom menu*/
+    .sub_title{display: none}
+    .title{text-align: left}
+    .title span{display: inline-block;font-size: 18px;}
+    
+    .menu_box{margin-left: 10px;margin-right: 10px ;margin-bottom:20px;}
+    .menu_wrap{width: 90%;margin-top: 300px;padding-left: 5%;padding-right: 5%;}
+
+}
+/*핸드폰사이즈*/
+@media screen and (max-width:480px){
+    .contents{padding-top: 10px;}
+    .menu_bg_wrap{width: 180px;height: 115px;left: 12%;top: 20px;}
+    .info_box{max-width:360px;width: 100%;margin: auto;padding-top: 20px;}
+    .info_box h2{text-align: center;margin-right: 20px;width: calc(50% - 20px);margin-left:50% ; ;padding-top: 20px;padding-bottom: 20px;}
+    .info_box .info_txt{position: absolute;width: 90%;top:145px;margin-top: 0;}
+    .info_box .info_price{right: 10%;bottom: 120px;}
+    .title{font-size: 16px;text-align: center}
+    .menu_wrap div{max-width:360px;margin: auto}
+    .menu_gnb{width: 90%;top: 70px;right: 0}
+    .title span{font-size: 12px;}
+    .menu_wrap{width: 95%;padding-left: 2.5%;padding-right: 2.5%;}
+    .menu_box{margin-left: 5px;margin-right: 5px ;margin-bottom:10px;}
+    .menu_gnb li{margin-left: 5px;margin-right: 5px;font-size: 12px;}
+   
+}
+@media screen and (max-width:360px){
+    .menu_bg_wrap{left: 0%}
+}
